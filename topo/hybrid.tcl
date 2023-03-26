@@ -1,12 +1,12 @@
 set ns [new Simulator]
-set nf [open out.nam w]
+set nf [open hybrid.nam w]
 $ns namtrace-all $nf
 
 proc finish {} {
         global ns nf
         $ns flush-trace
         close $nf
-        exec nam out.nam
+        exec nam hybrid.nam
         exit 0
 }
 
