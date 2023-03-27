@@ -66,6 +66,7 @@ create-god $val(nn)
 
 #UDP only
 # Set a  UDP connection between 
+
 set udp [new Agent/UDP]
 $ns attach-agent $node_(37) $udp
 set null [new Agent/Null]
@@ -78,6 +79,7 @@ $cbr set rate_ 1mb
 $cbr set maxpkts_ 1000
 $ns connect $udp $null
 $ns at 0.1 "$cbr start"
+$udp_ set_txrange 500
 
 
 
