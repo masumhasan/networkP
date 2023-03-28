@@ -1,6 +1,6 @@
 import random
 
-n_nodes = 150  # number of nodes to create
+n_nodes = 250  # number of nodes to create
 
 for i in range(n_nodes):
     node_id = i
